@@ -51,7 +51,7 @@ Open Signal is not just another job board. It’s:
 ## 🛡️ License & Ownership
 This is a **proprietary project**.  
 Viewing the source does **not** grant permission to copy, distribute, or commercialize.  
-All rights reserved © 2025 by Dee.  
+All rights reserved © 2025 by BorDevTech.  
 
 If you’d like to contribute, please open an issue to discuss first.  
 Unapproved forks or clones are not permitted.
