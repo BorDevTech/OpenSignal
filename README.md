@@ -1,38 +1,69 @@
-# OpenSignal
+# Open Signal 📡
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+**Broadcast your skills. Find your people. Build with trust.**
 
-## Getting Started
+Open Signal is a developer-focused **Looking For Group (LFG) platform** built on top of GitHub identity.  
+It helps developers broadcast what they **offer**, what they’re **looking for**, and connect safely through a **trust and moderation layer**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ What It Does
+- **Profiles as Signals**  
+  - Short 200–300 character summary.  
+  - Tags for **Offering** (skills/resources) and **Looking For** (needs/collaborators).  
+  - One profile per GitHub account, enforced via GitHub OAuth.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Trust & Moderation Layer**  
+  - “Effect tags” like *Outstanding Citizen*, *Poison Links*, *Saboteur*.  
+  - Quarantine system for flagged profiles.  
+  - Transparent, fair, and visible moderation.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Visibility & Fairness**  
+  - Profiles displayed as cards with consistent layout.  
+  - Sorting by freshness, trust, and optional featured status.  
+  - No endless feeds — clarity and discoverability first.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🔐 Authentication
+- GitHub OAuth (via NextAuth.js) ensures every action is tied to a verified GitHub account.  
+- Enforces **one profile per GitHub ID**.  
+- No anonymous spam, no fake accounts.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💰 Monetization (Future Roadmap)
+- **Donations**: GitHub Sponsors, OpenCollective.  
+- **Premium Visibility**: Featured profiles.  
+- **Recruiter Access**: Paid search/filter access.  
+- **Bounties/Marketplace**: Optional transaction layer.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🚀 Vision
+Open Signal is not just another job board. It’s:
+- A **trust-driven collaboration layer** for developers.  
+- A **global map of skills and needs**, powered by GitHub identity.  
+- A **community-first platform** where fairness, visibility, and moderation are built in from day one.  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛡️ License & Ownership
+This is a **proprietary project**.  
+Viewing the source does **not** grant permission to copy, distribute, or commercialize.  
+All rights reserved © 2025 by Dee.  
+
+If you’d like to contribute, please open an issue to discuss first.  
+Unapproved forks or clones are not permitted.
+
+---
+
+## 🧭 Contributing
+- Contributions are welcome **only by invitation or approval**.  
+- Please respect the project’s vision and ownership.  
+- To propose new tags, moderation rules, or features, open a GitHub Issue.
+
+---
+
+## 📡 Tagline
+> *The signal layer for developer collaboration.*
