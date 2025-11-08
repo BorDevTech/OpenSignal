@@ -7,7 +7,13 @@ const nextConfig: NextConfig = {
     GITHUB_SECRET: "b9ce2d03b211158b2ff8a2542508cba09b9f88ab",
   },
   images: {
-    domains: ["avatars.githubusercontent.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+        pathname: "/**",
+      },
+    ],
   },
 };
 
