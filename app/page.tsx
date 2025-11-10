@@ -12,7 +12,6 @@ export default async function Home() {
   if (session?.user) {
     return (
       <>
-        <ProjectHeader projectTitle={"OpenSignal"} />
         <Container h={"80vh"} bg={"blue.100"}>
           <AbsoluteCenter>
             <Card.Root>
@@ -45,7 +44,6 @@ export default async function Home() {
   }
   return (
     <>
-      <ProjectHeader projectTitle={"OpenSignal"} />
       <Container h={"80vh"} bg={"blue.100"}>
         <AbsoluteCenter>
           <Card.Root>

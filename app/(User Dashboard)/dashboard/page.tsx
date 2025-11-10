@@ -40,7 +40,6 @@ export default async function Home() {
 
   return (
     <Stack>
-      <ProjectHeader projectTitle="OpenSignal" />
       <Container maxW="container.md" py={8}>
         <Card.Root position="relative" p={8} mt={8}>
           {session ? (
