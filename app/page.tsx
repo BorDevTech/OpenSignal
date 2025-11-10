@@ -1,11 +1,11 @@
 "use server";
 
-import ProjectHeader from "./components/Header";
-import ProjectFooter from "./components/Footer";
+import ProjectHeader from "./(Components)/Header";
+import ProjectFooter from "./(Components)/Footer";
 import { Card, AbsoluteCenter, Container, Avatar } from "@chakra-ui/react";
 import { auth } from "./auth";
-import SignInButton from "./components/SignInButton";
-import SignOutButton from "./components/SignOutButton";
+import SignInButton from "./(Components)/SignInButton";
+import SignOutButton from "./(Components)/SignOutButton";
 
 export default async function Home() {
   const session = await auth();

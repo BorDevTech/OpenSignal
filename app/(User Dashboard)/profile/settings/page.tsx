@@ -1,8 +1,8 @@
 import { auth } from "@/app/auth";
-import ProjectFooter from "@/app/components/Footer";
-import ProjectHeader from "@/app/components/Header";
-import SignInButton from "@/app/components/SignInButton";
-import SignOutButton from "@/app/components/SignOutButton";
+import ProjectFooter from "@/app/(Components)/Footer";
+import ProjectHeader from "@/app/(Components)/Header";
+import SignInButton from "@/app/(Components)/SignInButton";
+import SignOutButton from "@/app/(Components)/SignOutButton";
 import { Container, Card, AbsoluteCenter, Avatar } from "@chakra-ui/react";
 
 export default async function Home() {

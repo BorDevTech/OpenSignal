@@ -1,8 +1,9 @@
+"use client";
 
 import { auth } from "@/app/auth";
-import ProjectHeader from "@/app/components/Header";
-import SignInButton from "@/app/components/SignInButton";
-import SignOutButton from "@/app/components/SignOutButton";
+import ProjectHeader from "@/app/(Components)/Header";
+import SignInButton from "@/app/(Components)/SignInButton";
+import SignOutButton from "@/app/(Components)/SignOutButton";
 import {
   Container,
   Card,
@@ -16,7 +17,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { LuX, LuCheck } from "react-icons/lu";
-import ApproveFetch from "@/app/components/ApproveFetch";
+import ApproveFetch from "@/app/(Components)/ApproveFetch";
 
 export default async function Home() {
   const session = await auth();
@@ -27,16 +28,16 @@ export default async function Home() {
   const items = [
     {
       label: "Hireable",
-      value: session.user?.hireable
+      value: session?.user?.hireable
         ? "Available for hire"
         : "Not available for hire",
     },
-    { label: "Location", value: session.user?.location },
+    { label: "Location", value: session?.user?.location },
     { label: "Total Repos", value: total_repos.toString() },
     { label: "Phone", value: "1234567890" },
     { label: "Address", value: "1234 Main St, Anytown, USA" },
   ];
-  
+
   return (
     <Stack>
       <ProjectHeader projectTitle="OpenSignal" />
@@ -85,7 +86,7 @@ export default async function Home() {
                     <LuX />
                     Decline
                   </Button>
-                  <ApproveFetch/>
+                  <ApproveFetch />
                 </Card.Footer>
               </Card.Root>
 

@@ -9,8 +9,9 @@ export default function ProjectHeader({
   projectTitle: string;
 }) {
   const { colorMode } = useColorMode();
+
   return (
-    <Container h={"10vh"}>
+    <Container h={"10vh"} position={"fixed"}>
       <HStack alignItems={"center"} justifyContent={"space-between"} h={"100%"}>
         <Heading size={"5xl"}>{projectTitle}</Heading>
         <ColorModeButton

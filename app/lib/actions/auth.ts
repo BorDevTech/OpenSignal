@@ -2,7 +2,7 @@ import { signIn, signOut } from "next-auth/react";
 
 export const loginWithGitHub = async () => {
   try {
-    await signIn("github", { callbackUrl: "/home" });
+    await signIn("github", { callbackUrl: "/dashboard" });
   } catch (error) {
     console.error("Error during GitHub sign-in:", error);
   }
