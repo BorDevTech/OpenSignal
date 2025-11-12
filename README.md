@@ -48,8 +48,7 @@ Open Signal is not just another job board. It’s:
 
 ---
 
-## 🛡️ License & Ownership
-This is a **proprietary project**.  
+## 🛡️ License & Ownership 
 Viewing the source does **not** grant permission to copy, distribute, or commercialize.  
 All rights reserved © 2025 by BorDevTech.  
 
