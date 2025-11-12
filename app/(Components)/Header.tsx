@@ -26,7 +26,7 @@ export default function ProjectInfo() {
   const ProjectInfo = {
     title: "OpenSignal",
     navLinks: [
-      { name: "login", path: "/" },
+      { name: "About", path: "/" },
       { name: "Dashboard", path: "/dashboard" },
     ],
   };
@@ -54,24 +54,26 @@ export default function ProjectInfo() {
       _light={{ bg: "white" }}
       justifyContent={"space-between"}
       id={"nav"}
-      px={"2"}
+      px={current === "base" || current === "sm" ? "2vh" : "2.5vh"}
     >
       <HStack alignItems={"center"} h={"100%"}>
-        <Heading size={"5xl"}>{title}</Heading>
+        <Heading size={current === "base" || current === "sm" ? "2xl" : "5xl"}>{title}</Heading>
       </HStack>
       <HStack>
         {current !== "base" && current !== "sm" ? (
           <HStack>
             {navLinks.map((link, index) => (
-              <ChakraLink key={index} href={link.href}>
+              <ChakraLink key={index} href={link.path}>
                 {link.name}
               </ChakraLink>
             ))}
             <ColorModeButton
-          size="sm"
-          variant="subtle"
-          title={`switch to ${colorMode === "light" ? "dark" : "light"} mode`}
-        />
+              size="sm"
+              variant="subtle"
+              title={`switch to ${
+                colorMode === "light" ? "dark" : "light"
+              } mode`}
+            />
           </HStack>
         ) : null}
         {current === "base" || current === "sm" ? (
@@ -137,7 +139,6 @@ export default function ProjectInfo() {
             </Portal>
           </Dialog.Root>
         ) : null}
-        
       </HStack>
     </HStack>
   );
