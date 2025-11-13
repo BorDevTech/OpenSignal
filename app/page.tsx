@@ -5,7 +5,10 @@ import { Card, AbsoluteCenter, Container, Avatar } from "@chakra-ui/react";
 import { auth } from "./auth";
 import SignInButton from "./(Components)/SignInButton";
 import SignOutButton from "./(Components)/SignOutButton";
+import RegisterButton from "./(Components)/RegisterButton";
+// Example user count
 
+//https:github.com/settings/applications/3229937/oauth_authorizations
 export default async function Home() {
   const session = await auth();
   if (session?.user) {
@@ -17,20 +20,6 @@ export default async function Home() {
               <Card.Title>Welcome back, {session.user.name}!</Card.Title>
             </Card.Header>
             <Card.Body>
-              {session.user.avatar_url && (
-                <>
-                  <Avatar.Root>
-                    <Avatar.Image
-                      src={session.user.avatar_url}
-                      alt={session.user.name || "User Avatar"}
-                    />
-                    <Avatar.Fallback>
-                      {session.user?.name?.charAt(0)}
-                    </Avatar.Fallback>
-                  </Avatar.Root>
-                  BIO:{session.user?.email}
-                </>
-              )}
               <SignOutButton />
             </Card.Body>
           </Card.Root>
@@ -40,18 +29,21 @@ export default async function Home() {
     );
   }
   return (
-    <Container h={"80vh"} bg={"blue.100"} maxW={"xl"} position={"relative"}>
+    <Container h={"80vh"} bg={"blue.100"} maxW={"5xl"} position={"relative"}>
       <AbsoluteCenter>
         <Card.Root size={"lg"}>
           <Card.Header alignItems={"center"}>
-            <Card.Title>Your code is your credential</Card.Title>
-            <Card.Description>
-              Join 1,000+ developers proving that impact beats pedigree. Every
-              commit counts. Every contributor matters. Every profile becomes
-              proof.
+            <Card.Title textStyle={"5xl"} textAlign={"center"}>
+              Your code is your credential
+            </Card.Title>
+            <Card.Description textStyle={"xl"} textAlign={"center"}>
+              Join {`RegisteredOpenSignalUsers`}+ developers on OpenSignal prove
+              that impact beats pedigree. Every commit counts. Every contributor
+              matters. Every profile becomes proof.
             </Card.Description>
           </Card.Header>
           <Card.Body>
+            {/* <RegisterButton /> */}
             <SignInButton />
           </Card.Body>
         </Card.Root>
